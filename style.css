@@ -133,7 +133,7 @@ html {
   height: 100vh;
   min-height: 62rem;
   max-height: 100rem;
-  background-image: url("../../assets/Background-hero2.png");
+  background-image: url("../circlefolio/assets/Background-hero2.png");
   background-size: cover;
   background-position: bottom; }
   .header .navigation {
@@ -268,7 +268,7 @@ html {
   height: 100vh;
   min-height: 90rem;
   max-height: 100rem;
-  background-image: url("../../assets/Path 5.png");
+  background-image: url("../circlefolio/assets/Path 5.png");
   background-size: cover;
   background-position: center; }
   .section__card {
@@ -392,7 +392,7 @@ html {
   position: relative;
   min-height: 85rem;
   max-height: fit-content;
-  background-image: url("../../assets/Background.png");
+  background-image: url("../circlefolio/assets/Background.png");
   background-size: cover; }
   .section-projects__cards-box {
     position: absolute;
