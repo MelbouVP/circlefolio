@@ -1,0 +1,100 @@
+*
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    /* Changes root pixel size for rem units from 16px to 10px */
+    /* 
+    1. Percentages are used in order to allow people with eyesight problems to override browser font-size setting to another number 18px 20px etc. 
+    2. Putting plain 10px as font-size blocks this options, therefore percentages are used.
+    3. So 10px/16px = 0.625 => 62.5% */
+
+    font-size: 62.5%;
+    overflow-x: hidden;
+    min-width: 320px;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    a:visited,
+    a:active, 
+    a:focus {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 1300px) {
+    html {
+        font-size: 60%;
+    }
+}
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 56%;
+    }
+}
+
+@media (max-width: 1100px) {
+    html {
+        font-size: 52%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    html {
+        font-size: 47%;
+    }
+}
+
+@media only screen and (max-width: 890px) {
+    html {
+        font-size: 43%;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    html {
+        font-size: 40%;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    html {
+        font-size: 38%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    html {
+        font-size: 36%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    html {
+        font-size: 35%;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    html {
+        font-size: 30%;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    html {
+        font-size: 27%;
+    }
+}

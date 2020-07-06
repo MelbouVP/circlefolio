@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Circlefolio</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navigation">
+            <div class="logo">
+                <img src='./assets/Logo.png' alt="Logo" class="logo__img">
+            </div>
+            <div class="navigation__links">
+                <ul>
+                    <a href="#about">
+                        <li>About</li>
+                    </a>
+                    <a href="#projects">
+                        <li>Portfolio</li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="header__title-box">
+            <h1 class="heading-title">
+                <span class="heading-title--pre">Hi, my name is</span>
+                <span class="heading-title--main">Roberts Oleiniks.</span>
+                <span class="heading-title--sub">I'm a Junior developer</span>
+            </h1>
+            
+            <div class="social-media ut-margin-t-5r">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="./assets/facebook_logo_transparent.png" alt="" class="social-media__link">
+                </a>
+                <a href="https://github.com/MelbouVP" target="_blank">
+                    <img src="./assets/Github_log_transperant.png" alt="" class="social-media__link">
+                </a>
+                <a href="https://www.linkedin.com" target="_blank">
+                    <img src="./assets/linkeding logo.png" alt="" class="social-media__link">
+                </a>
+                <a href="mailto:olein.roberts@gmail.com">
+                    <img src="./assets/Icon simple-email.png" alt="" class="social-media__link">
+                </a>
+            </div>
+        </div>
+
+
+        <div class="doodle-box">
+            <img src="./assets/Doodle_hello.png" alt="Doodle portrait">
+        </div>
+    </header>
+
+    <main>
+        <section class="section" id="about">
+            <div class="section__heading-wrapper ut-max-w-40r">
+                <h2 class="section__heading">
+                    A <span class="ut-text-color-blue">
+                        backstory
+                    </span> about me and my 
+                    <span class="ut-text-color-blue">
+                        pursuit</span>.
+                </h2>
+            </div>
+            
+            <div class="section__card">
+                <div class="card__persona-img">
+                    <img src="./assets/Doodle.png" alt="Persona image">
+                </div>
+                <div class="card__text">
+                    <div class="card__text--title">
+                        I am 
+                        <span class="ut-text-color-blue">
+                            Roberts Oleiniks</span>, a passionate and self-driven 
+                        <span class="ut-text-color-blue">
+                            web-developer</span>!
+                    </div>
+                    <div class="card__text--description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+                    </div>
+                    <div class="card__text--buttons">
+                        <button>
+                            <a href="assets/sample.pdf" target="_blank">
+                                View CV
+                            </a>
+                        </button>
+                        <button> 
+                            <a href="#projects">
+                                View Projects        
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-projects" id="projects">
+            <div class="section__heading-wrapper ut-max-w-30r">
+                <h2 class="section__heading ut-margin-t-5r ut-media-query-MEDIUM">
+                    Take a look at these 
+                    <span class="ut-text-color-blue">
+                        projects</span>.
+                </h2>
+            </div>
+
+            <div class="section-projects__cards-box">
+                <div class="card-left-wrapper">
+
+
+                    <div class="card__text-box">
+                        <div class="heading-primary">
+                            <span class="heading-primary--main">Affogato fashion - an e-commerce website
+                            </span>
+                            <input type='checkbox' id='modal_1' style="display:none" />
+                            
+                            <label class='button' for='modal_1' >
+                                <span class="heading-primary--sub">View details</span>
+                            </label>
+
+                            <!-- Left modal AFFOGATO FASHION -->
+                            <div class='modal' >
+                                <!-- Modal content box -->
+                                <div class='modal__content'>
+
+                                    <!-- Left-side of modal - project img, view live buttons -->
+                                    <div class="content__project-demo">
+
+                                        <div class="content__project-demo--img" id="modal__img--affogato-fashion">
+                                            <img src="./assets/affogato IMG.png" alt="Project image" />
+                                        </div>
+
+                                        <div class="content__project-demo--button-container">
+                                            <a href="https://github.com/MelbouVP/e-commerce-platform_fashion" target="_blank">
+                                            <button class="project-demo__button-container--button">
+                                                    <img src="./assets/Icon awesome-github.png" alt="Github logo" class="button-icon">
+                                                    <span class="button-text">Source code</span>
+                                                </button>
+                                            </a>
+                                            <button class="project-demo__button-container--button">
+                                                <img src="./assets/domain.png" alt="Internet logo" class="button-icon">
+                                                <span class="button-text">Live web</span>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <!-- Right-side of modal - project summary -->
+                                    <div class="content__project-summary">
+                                        <div class="content__project-summary--title">
+                                            <h3>Affogato fashion</h3>
+                                        </div>
+                                        <div class="content__project-summary--description">
+                                            <span>Description</span>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        </div>
+
+                                        <div class="content__project-summary--technology">
+                                            <span>Technology used</span>
+                                            <div class="technology__tech-stack">
+                                                <img src="./assets/react icon.png" alt="React logo">
+                                                <img src="./assets/css,js,html.png" alt="CSS, HTML, JS logo">
+                                                <img src="./assets/firebase 3.png" alt="Firebase logo">
+                                                <img src="./assets/redux.png" alt="Redux logo">
+                                                <img src="./assets/stripe logo1.png" alt="Stripe logo">
+                                                <img src="./assets/react router icon.png" alt="React router logo">
+                                                <img src="./assets/sass logo.png" alt="Sass logo">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    
+                                    <!-- Close buttons of modal -->
+                                    <label for='modal_1' class='modal__close-btn'>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class='overlay' ></div>
+                        </div>
+                    </div>
+                    <img src="./assets/affogato IMG.png" alt="Affogato fashion project" />
+                </div>
+                
+                <div class="card-right-wrapper">
+                    <div class="card__text-box">
+                        <div class="heading-primary">
+                            <span class="heading-primary--main">Recognize AI - an API based face image recognition 
+                            </span>
+                            <input type='checkbox' id='modal_2' style="display:none" />
+                            <label class='button' for='modal_2' >
+                                <span class="heading-primary--sub">View details</span>
+                            </label>
+                            
+                            <!-- Right modal RECOGNIZE AI -->
+                            <div class='modal' >
+                                <!-- Modal content box -->
+                                <div class='modal__content'>
+
+                                    <!-- Left-side of modal - project img, view live buttons -->
+                                    <div class="content__project-demo">
+
+                                        <div class="content__project-demo--img" id="modal__img--recognizeAI">
+                                            <img src="./assets/recognizeAi.png" id="modal__img--recognizeAI" alt="Project image" />
+                                        </div>
+
+                                        <div class="content__project-demo--button-container">
+                                            <a href="https://github.com/MelbouVP/e-commerce-platform_fashion" target="_blank">
+                                            <button class="project-demo__button-container--button">
+                                                    <img src="./assets/Icon awesome-github.png" alt="Github logo" class="button-icon">
+                                                    <span class="button-text">Source code</span>
+                                                </button>
+                                            </a>
+                                            <button class="project-demo__button-container--button">
+                                                <img src="./assets/domain.png" alt="Internet logo" class="button-icon">
+                                                <span class="button-text">Live web</span>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <!-- Right-side of modal - project summary -->
+                                    <div class="content__project-summary">
+                                        <div class="content__project-summary--title">
+                                            <h3>Recognize AI</h3>
+                                        </div>
+                                        <div class="content__project-summary--description">
+                                            <span>Description</span>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                                        </div>
+
+                                        <div class="content__project-summary--technology">
+                                            <span>Technology used</span>
+                                            <div class="technology__tech-stack">
+                                                <img src="./assets/react icon.png" alt="React logo">
+                                                <img src="./assets/css,js,html.png" alt="CSS, HTML, JS logo">
+                                                <img src="./assets/postgreSQL icon.png" alt="PostgreSQL logo">
+                                                <img src="./assets/node js icon.png" alt="Node js logo">
+                                                <img src="./assets/knex icon.png" alt="KnexJS logo">
+                                                <img src="./assets/clarifai_logo.png" alt="Clarfai logo">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    
+                                    <!-- Close buttons of modal -->
+                                    <label for='modal_2' class='modal__close-btn'>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class='overlay' ></div>
+                            
+                        </div>
+                    </div>
+                    <img src="./assets/recognizeAi.png" alt="Recognize AI project">
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__content-container">
+            <div class="content__social-media">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="./assets/facebook_logo_transparent.png" alt="" class="social-media__link">
+                </a>
+                <a href="https://github.com/MelbouVP" target="_blank">
+                    <img src="./assets/Github_log_transperant.png" alt="" class="social-media__link">
+                </a>
+                <a href="https://www.linkedin.com" target="_blank">
+                    <img src="./assets/linkeding logo.png" alt="" class="social-media__link">
+                </a>
+                <a href="mailto:olein.roberts@gmail.com">
+                    <img src="./assets/Icon simple-email.png" alt="" class="social-media__link">
+                </a>
+            </div>
+            <div class="content__copyright">
+                © Roberts Oleiniks
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Unna:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap');
+
+
+html {
+    font-family: 'Unna', serif;
+}
+
+.section {
+    &__heading-wrapper {
+        margin: 0 auto;
+
+        .section__heading {
+            text-align: center;
+            font-size: 3.5rem;
+
+        }
+    }
+}

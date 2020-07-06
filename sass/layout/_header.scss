@@ -1,0 +1,244 @@
+.header {
+    position: relative;
+    height: 100vh;
+    min-height: 62rem;
+    max-height: 100rem;
+    background-image: url('../../assets/Background-hero2.png');
+    background-size: cover;
+    background-position: bottom;
+
+    .navigation {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 7rem;
+
+        .logo {
+            padding-left: 3rem;
+
+            &__img {
+                height: 5rem;
+                width: 15rem;
+            }
+        }
+
+        &__links {
+            padding-right: 18rem;
+            font-size: 2.75rem;
+
+            ul {
+                display: flex;
+                list-style: none;
+                padding: 0;
+
+                a {
+                    &:last-child {
+                        font-weight: bold;
+                    }
+                }
+
+                li {
+                    margin-left: 5rem;
+                    color: white;
+
+                    &:hover {
+                        cursor: pointer;
+                        // color: rgb(160, 160, 160);
+                        color: black;
+                    }
+                }
+
+            }
+        }
+
+    }
+    
+    .header__title-box {
+        margin-left: 7.5rem;
+        margin-top: 3rem;
+
+        .heading-title {
+            animation-name: moveInLeft;
+            animation-duration: 1s;
+            animation-timing-function: ease-out;
+            
+            &--pre {
+                display: block;
+                color: #C3C3C3;
+                font-size: 2.2rem;
+                font-style: italic;
+            }
+
+            &--main {
+                font-family: 'Merienda', cursive;
+                display: block;
+                color: white;
+                font-size: 8rem;
+                letter-spacing: .5rem;
+            }
+
+            &--sub {
+                display: block;
+                color: black;
+                font-size: 3rem;
+                margin-top: 2rem;
+            }
+        }
+    }
+
+    .social-media {
+        @include socialLinks;
+        animation-name: fadeIn;
+        animation-duration: 1s;
+        animation-delay: 1s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: backwards;
+    }
+
+    .doodle-box {
+        position: absolute;
+        right: 7%;
+        top: 15%;
+        animation-name: moveInRight;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+
+        img {
+            width: 42rem;
+            height: 35rem;
+        }
+    }
+
+}
+
+@media  only screen and (max-width: 1050px) {
+    .header {
+
+        .doodle-box {
+            right: 0%;
+            top: 20%;
+        }
+    }
+}
+
+// @media  only screen and (max-width: 1000px) {
+//     .header {
+
+//         .doodle-box {
+//             right: 0%;
+//             top: 15%;
+//         }
+//     }
+// }
+
+@media  only screen and (max-width: 890px) {
+    .header {
+
+        .doodle-box {
+            right: 0%;
+            top: 25%;
+
+            img {
+                width: 48rem;
+                height: 39rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .header {
+        .header__title-box {
+            margin-top: 3rem;
+            margin-left: 3rem;
+            .heading-title {
+                &--main {
+                    font-size: 7rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    .header {
+
+        //! HAMBURGER MENU
+
+
+        .header__title-box {
+            margin-top: 3rem;
+            margin-left: 3rem;
+            .heading-title {
+            
+                &--pre {
+                    
+                    font-size: 2.2rem;
+                }
+    
+                &--main {
+                    font-size: 8rem;
+                }
+    
+                &--sub {
+                    font-size: 3rem;
+                }
+            }
+        }
+
+        .doodle-box {
+            right: 0%;
+            top: 35%;
+
+            img {
+                width: 50rem;
+                height: 41rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .header {
+
+        .header__title-box {
+            margin-top: 6rem;
+            .heading-title {
+
+                &--main {
+                    font-size: 6rem;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .header {
+
+        .doodle-box {
+            right: 0%;
+            top: 30%;
+
+            img {
+                width: 55rem;
+                height: 45rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .header {
+
+        .header__title-box {
+            margin-top: 5rem;
+        }
+
+        .doodle-box {
+            right: 12%;
+            top: 42%;
+        }
+    }
+}

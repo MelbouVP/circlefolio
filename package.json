@@ -1,0 +1,14 @@
+{
+  "name": "circlefolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "node-sass sass/main.scss style.css -w"
+  },
+  "author": "Roberts",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
