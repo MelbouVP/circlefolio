@@ -33,7 +33,7 @@
     box-shadow: black 1.5rem 1.5rem 2rem;
     transition: all .5s ease-in;
 
-    &:hover {
+    &:hover, &:active {
         .card__text-box {
             .heading-primary {
                 &--main {

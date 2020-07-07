@@ -14,6 +14,11 @@
     max-width: 30rem;
 }
 
+.ut-bold-text {
+    // color: rgb(0, 107, 214);
+    font-weight: bold;
+}
+
 @media only screen and (max-width: 780px) {
     .ut-media-query-MEDIUM {
         padding-top: 15rem;

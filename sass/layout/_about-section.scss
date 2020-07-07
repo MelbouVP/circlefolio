@@ -1,10 +1,10 @@
 
-.section {
+.section-about {
     position: relative;
     height: 100vh;
-    min-height: 90rem;
-    max-height: 100rem;
-    background-image: url('../circlefolio/assets/Path\ 5.png');
+    min-height: 95rem;
+    max-height: 105rem;
+    background-image: $about-bg-dev;
     background-size: cover;
     background-position: center;
 
@@ -35,7 +35,7 @@
         .card__text {
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: space-evenly;
             align-self: center;
             height: 90%;
             width: 50%;
@@ -44,7 +44,8 @@
                 text-align: center;
                 margin: 0 auto;
                 width: 80%;
-                font-size: 2.5rem;
+                font-size: 3rem;
+                font-weight: bold;
             }
     
             &--description {
@@ -84,12 +85,12 @@
 }
 
 @media (max-width: 800px) {
-    .section {
+    .section-about {
 
         &__card {
             top: 15%;
             left: 10%;
-            min-height: 70rem;
+            min-height: 80rem;
             padding: 2rem;
             flex-direction: column;
             align-items: center;
