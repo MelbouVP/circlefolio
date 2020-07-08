@@ -8,7 +8,6 @@
 // }
 
 @mixin socialLinks {
-    
     .social-media__link {
         height: 5rem;
         width: 5rem;
@@ -18,9 +17,6 @@
 
 @mixin project-cards {
     position: relative;
-    // display: flex;
-    // bottom: -10%;
-    // right: 55%;
     height: 90%;
     width: 45%;
     background-image: linear-gradient(
@@ -28,40 +24,9 @@
         rgba(17, 0, 255, 0.14), 
         rgba(10, 10, 208, 0.65),
         rgba(24, 17, 112, 1));
-        // url('../../assets/affogato\ IMG.png');
     background-position: center;
     box-shadow: black 1.5rem 1.5rem 2rem;
     transition: all .5s ease-in;
-
-    &:hover, &:active {
-        .card__text-box {
-            .heading-primary {
-                &--main {
-                    color: rgba(140, 140, 140, 1);
-                }
-                &--sub {
-                    cursor: pointer;
-                    font-size: 2.5rem;
-                    font-weight: bold;
-
-                    &:hover {
-                        color: rgb(180, 180, 180);
-                    }
-
-                    //? ARROW on view details hover actions
-                    &:after {
-                        content: ' \2192';
-                        height: .5rem;
-                        width: .5rem;
-                        padding: .9rem;
-                        vertical-align: top;
-                        
-                    }
-                }
-            }
-        }
-
-    }
     
     img {
         position: relative;
@@ -94,6 +59,70 @@
             }
         }
         
+    }
+
+    //! Hover effect on project card for non-mobile devices.
+    @media only screen and (min-width: 780px) {
+        &:hover {
+            .card__text-box {
+                .heading-primary {
+                    &--main {
+                        color: lightblue
+                    }
+                    &--sub {
+                        cursor: pointer;
+                        font-size: 2.5rem;
+                        font-weight: bold;
+    
+                        &:hover {
+                            color: rgb(120, 120, 120);
+                            // color: lightblue
+                        }
+    
+                        //? ARROW on view details hover actions
+                        &:after {
+                            content: ' \2192';
+                            height: .5rem;
+                            width: .5rem;
+                            padding: .9rem;
+                            vertical-align: top;
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //! Bigger font-size on project cards for mobile devices (hover effects don't work well)
+    @media only screen and (max-width: 780px) {
+            .card__text-box {
+                top: 55%;
+                .heading-primary {
+                    &--main {
+                        max-width: 50%;
+                        margin-bottom: 3rem;
+                        color: lightblue;
+                        font-size: 3rem;
+                        line-height: 4rem;
+                    }
+                    &--sub {
+                        cursor: pointer;
+                        font-size: 4rem;
+                        font-weight: bold;
+
+                        //? ARROW on view details hover actions
+                        &:after {
+                            content: ' \2192';
+                            height: .5rem;
+                            width: .5rem;
+                            padding: .9rem;
+                            vertical-align: top;
+                            
+                        }
+                    }
+                }
+            }
     }
 }
 

@@ -27,7 +27,7 @@ a {
   a a:active,
   a a:focus {
     color: white;
-    text-decoration: none; }
+    outline: none; }
 
 @media (max-width: 1300px) {
   html {
@@ -268,8 +268,8 @@ html {
 
 .section-about {
   position: relative;
-  height: 100vh;
-  min-height: 95rem;
+  height: 105vh;
+  min-height: 105rem;
   max-height: 105rem;
   background-image: url("../../assets/Path 5.png");
   background-size: cover;
@@ -314,24 +314,27 @@ html {
         justify-content: space-evenly;
         align-items: center;
         height: 15%; }
-        .section-about__card .card__text--buttons button {
-          width: 40%;
-          height: 60%;
-          padding: 1rem;
-          color: white;
-          background: linear-gradient(to right, #006BD6, #46ADE0);
-          border: none;
-          transition: all .3s ease-in; }
-          .section-about__card .card__text--buttons button:hover {
-            cursor: pointer;
-            transform: scale(1.15); }
-          .section-about__card .card__text--buttons button:hover {
-            font-size: 2rem;
-            background: linear-gradient(to right, #0b22ec, #026799); }
-          .section-about__card .card__text--buttons button a:visited {
-            color: white; }
+        .section-about__card .card__text--buttons .btn-about {
+          width: 40%; }
+          .section-about__card .card__text--buttons .btn-about button {
+            height: 60%;
+            width: 100%;
+            padding: 1rem;
+            color: white;
+            background: linear-gradient(to right, #006BD6, #46ADE0);
+            border: none;
+            outline: none;
+            transition: all .3s ease-in; }
+            .section-about__card .card__text--buttons .btn-about button:hover {
+              cursor: pointer;
+              transform: scale(1.15); }
+            .section-about__card .card__text--buttons .btn-about button:hover {
+              font-size: 2rem;
+              background: linear-gradient(to right, #0b22ec, #026799); }
+            .section-about__card .card__text--buttons .btn-about button a:visited {
+              color: white; }
 
-@media (max-width: 800px) {
+@media (max-width: 780px) {
   .section-about__card {
     top: 15%;
     left: 10%;
@@ -417,20 +420,6 @@ html {
       box-shadow: black 1.5rem 1.5rem 2rem;
       transition: all .5s ease-in;
       margin-top: 10rem; }
-      .section-projects__cards-box .card-left-wrapper:hover .card__text-box .heading-primary--main, .section-projects__cards-box .card-left-wrapper:active .card__text-box .heading-primary--main {
-        color: #8c8c8c; }
-      .section-projects__cards-box .card-left-wrapper:hover .card__text-box .heading-primary--sub, .section-projects__cards-box .card-left-wrapper:active .card__text-box .heading-primary--sub {
-        cursor: pointer;
-        font-size: 2.5rem;
-        font-weight: bold; }
-        .section-projects__cards-box .card-left-wrapper:hover .card__text-box .heading-primary--sub:hover, .section-projects__cards-box .card-left-wrapper:active .card__text-box .heading-primary--sub:hover {
-          color: #b4b4b4; }
-        .section-projects__cards-box .card-left-wrapper:hover .card__text-box .heading-primary--sub:after, .section-projects__cards-box .card-left-wrapper:active .card__text-box .heading-primary--sub:after {
-          content: ' \2192';
-          height: .5rem;
-          width: .5rem;
-          padding: .9rem;
-          vertical-align: top; }
       .section-projects__cards-box .card-left-wrapper img {
         position: relative;
         width: 100%;
@@ -453,6 +442,40 @@ html {
             font-size: 1.5rem;
             line-height: 2rem;
             transition: all .3s ease-in; }
+      @media only screen and (min-width: 780px) {
+        .section-projects__cards-box .card-left-wrapper:hover .card__text-box .heading-primary--main {
+          color: lightblue; }
+        .section-projects__cards-box .card-left-wrapper:hover .card__text-box .heading-primary--sub {
+          cursor: pointer;
+          font-size: 2.5rem;
+          font-weight: bold; }
+          .section-projects__cards-box .card-left-wrapper:hover .card__text-box .heading-primary--sub:hover {
+            color: #787878; }
+          .section-projects__cards-box .card-left-wrapper:hover .card__text-box .heading-primary--sub:after {
+            content: ' \2192';
+            height: .5rem;
+            width: .5rem;
+            padding: .9rem;
+            vertical-align: top; } }
+      @media only screen and (max-width: 780px) {
+        .section-projects__cards-box .card-left-wrapper .card__text-box {
+          top: 55%; }
+          .section-projects__cards-box .card-left-wrapper .card__text-box .heading-primary--main {
+            max-width: 50%;
+            margin-bottom: 3rem;
+            color: lightblue;
+            font-size: 3rem;
+            line-height: 4rem; }
+          .section-projects__cards-box .card-left-wrapper .card__text-box .heading-primary--sub {
+            cursor: pointer;
+            font-size: 4rem;
+            font-weight: bold; }
+            .section-projects__cards-box .card-left-wrapper .card__text-box .heading-primary--sub:after {
+              content: ' \2192';
+              height: .5rem;
+              width: .5rem;
+              padding: .9rem;
+              vertical-align: top; } }
     .section-projects__cards-box .card-right-wrapper {
       position: relative;
       height: 90%;
@@ -462,20 +485,6 @@ html {
       box-shadow: black 1.5rem 1.5rem 2rem;
       transition: all .5s ease-in;
       margin-bottom: 10rem; }
-      .section-projects__cards-box .card-right-wrapper:hover .card__text-box .heading-primary--main, .section-projects__cards-box .card-right-wrapper:active .card__text-box .heading-primary--main {
-        color: #8c8c8c; }
-      .section-projects__cards-box .card-right-wrapper:hover .card__text-box .heading-primary--sub, .section-projects__cards-box .card-right-wrapper:active .card__text-box .heading-primary--sub {
-        cursor: pointer;
-        font-size: 2.5rem;
-        font-weight: bold; }
-        .section-projects__cards-box .card-right-wrapper:hover .card__text-box .heading-primary--sub:hover, .section-projects__cards-box .card-right-wrapper:active .card__text-box .heading-primary--sub:hover {
-          color: #b4b4b4; }
-        .section-projects__cards-box .card-right-wrapper:hover .card__text-box .heading-primary--sub:after, .section-projects__cards-box .card-right-wrapper:active .card__text-box .heading-primary--sub:after {
-          content: ' \2192';
-          height: .5rem;
-          width: .5rem;
-          padding: .9rem;
-          vertical-align: top; }
       .section-projects__cards-box .card-right-wrapper img {
         position: relative;
         width: 100%;
@@ -498,6 +507,40 @@ html {
             font-size: 1.5rem;
             line-height: 2rem;
             transition: all .3s ease-in; }
+      @media only screen and (min-width: 780px) {
+        .section-projects__cards-box .card-right-wrapper:hover .card__text-box .heading-primary--main {
+          color: lightblue; }
+        .section-projects__cards-box .card-right-wrapper:hover .card__text-box .heading-primary--sub {
+          cursor: pointer;
+          font-size: 2.5rem;
+          font-weight: bold; }
+          .section-projects__cards-box .card-right-wrapper:hover .card__text-box .heading-primary--sub:hover {
+            color: #787878; }
+          .section-projects__cards-box .card-right-wrapper:hover .card__text-box .heading-primary--sub:after {
+            content: ' \2192';
+            height: .5rem;
+            width: .5rem;
+            padding: .9rem;
+            vertical-align: top; } }
+      @media only screen and (max-width: 780px) {
+        .section-projects__cards-box .card-right-wrapper .card__text-box {
+          top: 55%; }
+          .section-projects__cards-box .card-right-wrapper .card__text-box .heading-primary--main {
+            max-width: 50%;
+            margin-bottom: 3rem;
+            color: lightblue;
+            font-size: 3rem;
+            line-height: 4rem; }
+          .section-projects__cards-box .card-right-wrapper .card__text-box .heading-primary--sub {
+            cursor: pointer;
+            font-size: 4rem;
+            font-weight: bold; }
+            .section-projects__cards-box .card-right-wrapper .card__text-box .heading-primary--sub:after {
+              content: ' \2192';
+              height: .5rem;
+              width: .5rem;
+              padding: .9rem;
+              vertical-align: top; } }
 
 @media only screen and (max-width: 780px) {
   .section-projects {
@@ -515,44 +558,9 @@ html {
       .section-projects__cards-box .card-left-wrapper {
         margin: 2.5rem;
         width: 65%; }
-        .section-projects__cards-box .card-left-wrapper .card__text-box .heading-primary--main {
-          font-size: 3rem;
-          margin-bottom: 3.5rem;
-          line-height: 3.5rem; }
-        .section-projects__cards-box .card-left-wrapper .card__text-box .heading-primary--sub {
-          display: block;
-          font-size: 2rem;
-          line-height: 2rem;
-          transition: font-size .5s; }
-          .section-projects__cards-box .card-left-wrapper .card__text-box .heading-primary--sub:hover, .section-projects__cards-box .card-left-wrapper .card__text-box .heading-primary--sub:active {
-            font-size: 2.5rem; }
       .section-projects__cards-box .card-right-wrapper {
         margin: 2.5rem;
-        width: 65%; }
-        .section-projects__cards-box .card-right-wrapper .card__text-box .heading-primary--main {
-          font-size: 3rem;
-          margin-bottom: 3.5rem;
-          line-height: 3.5rem; }
-        .section-projects__cards-box .card-right-wrapper .card__text-box .heading-primary--sub {
-          font-size: 2rem; }
-          .section-projects__cards-box .card-right-wrapper .card__text-box .heading-primary--sub:hover, .section-projects__cards-box .card-right-wrapper .card__text-box .heading-primary--sub:active {
-            font-size: 2.5rem; } }
-
-@media only screen and (max-width: 560px) {
-  .section-projects__cards-box .card-left-wrapper .card__text-box .heading-primary--main {
-    font-size: 2.5rem;
-    margin-bottom: 2.5rem; }
-  .section-projects__cards-box .card-left-wrapper .card__text-box .heading-primary--sub {
-    font-size: 1.8rem; }
-    .section-projects__cards-box .card-left-wrapper .card__text-box .heading-primary--sub:hover {
-      font-size: 2.5rem; }
-  .section-projects__cards-box .card-right-wrapper .card__text-box .heading-primary--main {
-    font-size: 2.5rem;
-    margin-bottom: 2.5rem; }
-  .section-projects__cards-box .card-right-wrapper .card__text-box .heading-primary--sub {
-    font-size: 1.8rem; }
-    .section-projects__cards-box .card-right-wrapper .card__text-box .heading-primary--sub:hover {
-      font-size: 2.5rem; } }
+        width: 65%; } }
 
 .footer {
   display: flex;
@@ -849,7 +857,7 @@ input[type='checkbox']:checked ~ .modal {
           font-size: 2.5rem;
           margin: 2rem 0 1rem 0; }
         .modal .modal__content .content__project-summary--description p {
-          font-size: 2.2rem;
+          font-size: 2.5rem;
           line-height: 3.5rem;
           margin: 1rem 0 2rem 0; }
       .modal .modal__content .content__project-summary--technology span {

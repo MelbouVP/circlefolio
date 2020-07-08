@@ -1,10 +1,10 @@
 
 .section-about {
     position: relative;
-    height: 100vh;
-    min-height: 95rem;
+    height: 105vh;
+    min-height: 105rem;
     max-height: 105rem;
-    background-image: $about-bg-dev;
+    background-image: $about-bg-prod;
     background-size: cover;
     background-position: center;
 
@@ -60,22 +60,28 @@
                 align-items: center;
                 height: 15%;
     
-                button {
+                .btn-about {
+                    
                     width: 40%;
-                    height: 60%;
-                    padding: 1rem;
-                    color: white;
-                    background: linear-gradient(to right, #006BD6, #46ADE0);
-                    border: none;
-
-                    @include button-scale;
-                    &:hover {
-                        font-size: 2rem;
-                        background: linear-gradient(to right, #0b22ec, #026799);
-                    }
-
-                    a:visited {
+                    button {
+                        height: 60%;
+                        width: 100%;    
+                        padding: 1rem;
                         color: white;
+                        background: linear-gradient(to right, #006BD6, #46ADE0);
+                        border:none;
+                        outline: none;
+                        
+
+                        @include button-scale;
+                        &:hover {
+                            font-size: 2rem;
+                            background: linear-gradient(to right, #0b22ec, #026799);
+                        }
+
+                        a:visited {
+                            color: white;
+                        }
                     }
                 }
             }
@@ -84,7 +90,7 @@
 
 }
 
-@media (max-width: 800px) {
+@media (max-width: 780px) {
     .section-about {
 
         &__card {
