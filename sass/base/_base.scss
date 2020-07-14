@@ -16,6 +16,9 @@ html {
     font-size: 62.5%;
     overflow-x: hidden;
     min-width: 320px;
+
+    // smooth scrolling for a tags
+    scroll-behavior: smooth;
 }
 
 body {

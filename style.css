@@ -15,7 +15,8 @@ html {
     3. So 10px/16px = 0.625 => 62.5% */
   font-size: 62.5%;
   overflow-x: hidden;
-  min-width: 320px; }
+  min-width: 320px;
+  scroll-behavior: smooth; }
 
 body {
   box-sizing: border-box;
@@ -136,7 +137,7 @@ html {
   height: 100vh;
   min-height: 62rem;
   max-height: 100rem;
-  background-image: url("../../assets/Background-hero2.png");
+  background-image: url("../circlefolio/assets/Background-hero2.png");
   background-size: cover;
   background-position: bottom; }
   .header .navigation {
@@ -271,7 +272,7 @@ html {
   height: 105vh;
   min-height: 105rem;
   max-height: 105rem;
-  background-image: url("../../assets/Path 5.png");
+  background-image: url("../circlefolio/assets/Path 5.png");
   background-size: cover;
   background-position: center; }
   .section-about__card {
@@ -292,7 +293,8 @@ html {
       width: 35%; }
       .section-about__card .card__persona-img img {
         height: 30rem;
-        width: 30rem; }
+        width: 30rem;
+        pointer-events: none; }
     .section-about__card .card__text {
       display: flex;
       flex-direction: column;
@@ -399,7 +401,7 @@ html {
   position: relative;
   min-height: 85rem;
   max-height: fit-content;
-  background-image: url("../../assets/Background.png");
+  background-image: url("../circlefolio/assets/Background.png");
   background-size: cover; }
   .section-projects__cards-box {
     position: absolute;
