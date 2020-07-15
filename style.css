@@ -138,8 +138,9 @@ html {
 
 .header {
   position: relative;
-  height: 100vh;
-  background-image: url("../circlefolio/assets/Background-hero2.png");
+  height: 105vh;
+  min-height: 90rem;
+  background-image: url("../../assets/Background-hero2.png");
   background-size: cover;
   background-position: bottom; }
   .header .navigation {
@@ -238,8 +239,8 @@ html {
     .header .header__title-box .heading-title--sub {
       font-size: 3rem; }
   .header .doodle-box {
-    right: 0%;
-    top: 35%; }
+    right: 5%;
+    top: 30%; }
     .header .doodle-box img {
       width: 50rem;
       height: 41rem; } }
@@ -247,23 +248,60 @@ html {
 @media only screen and (max-width: 550px) {
   .header .header__title-box {
     margin-top: 6rem; }
+    .header .header__title-box .heading-title--pre {
+      font-size: 3rem; }
     .header .header__title-box .heading-title--main {
-      font-size: 6rem; } }
+      font-size: 8rem; }
+    .header .header__title-box .heading-title--sub {
+      font-size: 4rem; } }
 
 @media only screen and (max-width: 500px) {
   .header .doodle-box {
     right: 0%;
-    top: 30%; }
+    top: 35%; }
     .header .doodle-box img {
       width: 55rem;
       height: 45rem; } }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 460px) {
   .header .header__title-box {
     margin-top: 5rem; }
+    .header .header__title-box .heading-title--pre {
+      font-size: 2.5rem; }
+    .header .header__title-box .heading-title--main {
+      font-size: 7rem; }
+    .header .header__title-box .heading-title--sub {
+      font-size: 3.5rem; }
   .header .doodle-box {
     right: 12%;
-    top: 42%; } }
+    top: 42%; }
+    .header .doodle-box img {
+      width: 57rem;
+      height: 47rem; } }
+
+@media only screen and (max-width: 440px) {
+  .header .header__title-box {
+    margin-top: 10rem; }
+  .header .doodle-box {
+    right: 10%;
+    top: 40%; }
+    .header .doodle-box img {
+      width: 63rem;
+      height: 55rem; } }
+
+@media only screen and (max-width: 380px) {
+  .header .header__title-box .heading-title--pre {
+    font-size: 3rem; }
+  .header .header__title-box .heading-title--main {
+    font-size: 6.8rem; }
+  .header .header__title-box .heading-title--sub {
+    font-size: 4rem; }
+  .header .doodle-box {
+    right: 10%;
+    top: 40%; }
+    .header .doodle-box img {
+      width: 63rem;
+      height: 53rem; } }
 
 .section-about {
   position: relative;
