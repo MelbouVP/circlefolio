@@ -684,15 +684,16 @@ input[type='checkbox']:checked ~ .modal {
   z-index: 12;
   width: 90vw;
   max-height: 90vh;
-  overflow-y: scroll; }
+  overflow-y: scroll;
+  transform: translateZ(0); }
   .modal__content .modal__close-btn {
     position: fixed;
     height: 4rem;
     width: 4rem;
     border: .1rem solid black;
     background-color: white;
-    right: 2.5%;
-    top: 2%;
+    right: 1%;
+    top: 3%;
     border-radius: 50%; }
     .modal__content .modal__close-btn:hover {
       background-color: #E4E4E4;
@@ -818,9 +819,16 @@ input[type='checkbox']:checked ~ .modal {
     width: 85vw;
     height: 90vh; }
     .modal .modal__content .modal__close-btn {
+      height: 6rem;
+      width: 6rem;
       right: 3%;
-      top: 1%;
+      top: 2%;
       z-index: 15; }
+      .modal .modal__content .modal__close-btn:before, .modal .modal__content .modal__close-btn:after {
+        left: 50%;
+        bottom: 25%;
+        height: 3rem;
+        width: .15rem; }
     .modal .modal__content .content__project-demo {
       justify-content: space-evenly;
       height: 70rem;
