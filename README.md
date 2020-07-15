@@ -1,2 +1,4 @@
-# circlefolio
-Personal portfolio page
+# Circlefolio
+
+
+### Personal portfolio page for project preview. Made with HTML & SASS
