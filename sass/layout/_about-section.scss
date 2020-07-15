@@ -1,9 +1,7 @@
 
 .section-about {
     position: relative;
-    height: 105vh;
-    min-height: 105rem;
-    max-height: 105rem;
+    min-height: 95rem;
     background-image: $about-bg-prod;
     background-size: cover;
     background-position: center;
@@ -12,10 +10,10 @@
         position: absolute;
         display: flex;
         justify-content: space-evenly;
-        width: 75%;
-        height: 60%;
+        width: 79%;
+        height: 66%;
         top: 20%;
-        left: 12%;
+        left: 10%;
         background-color: white;
         border-radius: 8rem;
         box-shadow: gray 1.5rem 1.5rem 3rem;
@@ -25,10 +23,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 35%;
+            width: 40%;
             img {
-                height: 30rem;
-                width: 30rem;
+                height: 35rem;
+                width: 35rem;
                 pointer-events: none;
             }
         }
@@ -50,33 +48,31 @@
             }
     
             &--description {
-                font-size: 2rem;
+                font-size: 2.25rem;
                 line-height: 1.5;
     
             }
     
             &--buttons {
                 display: flex;
-                justify-content: space-evenly;
+                justify-content: space-around;
                 align-items: center;
                 height: 15%;
     
                 .btn-about {
-                    
                     width: 40%;
                     button {
                         height: 60%;
                         width: 100%;    
-                        padding: 1rem;
+                        padding: 1.5rem .5rem;
                         color: white;
                         background: linear-gradient(to right, #006BD6, #46ADE0);
                         border:none;
                         outline: none;
-                        
+                        font-size: 2rem;
 
                         @include button-scale;
                         &:hover {
-                            font-size: 2rem;
                             background: linear-gradient(to right, #0b22ec, #026799);
                         }
 
@@ -93,47 +89,38 @@
 
 @media (max-width: 780px) {
     .section-about {
-
+        min-height: 116rem;
         &__card {
             top: 15%;
             left: 10%;
-            min-height: 80rem;
+            min-height: 93rem;
             padding: 2rem;
             flex-direction: column;
             align-items: center;
 
             .card__persona-img {
                 width: 75%;
+                margin-bottom: 2rem;
             }
         
             .card__text {
-                height: 80%;
-                width: 75%;
-                justify-content: space-evenly;
+                width: 80%;
         
                 &--title {
-                    text-align: center;
-                    margin: 0 auto;
-                    width: 90%;
-                    font-size: 2.5rem;
+                    font-size: 3rem;
                 }
         
                 &--description {
-                    font-size: 2rem;
-                    line-height: 1.5;
+                    font-size: 2.4rem;
         
                 }
         
                 &--buttons {
-                    display: flex;
                     justify-content: space-evenly;
         
                     button {
-                        width: 20rem;
-                        padding: 1rem;
-                        color: white;
-                        background: linear-gradient(to right, #006BD6, #46ADE0);
-                        border: none;
+                        width: 15rem;
+                        font-size: 2.25rem;
                     }
                 }
             }
@@ -142,46 +129,30 @@
     }
 }
 
-@media (max-width: 470px) { 
-    .section {
-
+@media (max-width: 540px) { 
+    .section-about {
+        min-height: 150rem;
+        background-position: 50% 50;
         &__card {
-            top: 15%;
-            left: 7%;
-            min-height: 70rem;
-            padding: 2rem;
-            flex-direction: column;
-            align-items: center;
-
-            .card__persona-img {
-                width: 75%;
-            }
-        
+            min-height: 120rem;
             .card__text {
-                height: 80%;
-                width: 75%;
-                justify-content: space-evenly;
+                width: 85%;
         
                 &--title {
-                    text-align: center;
-                    margin: 0 auto;
-                    width: 90%;
-                    font-size: 2.5rem;
+                    font-size: 3.5rem;
                 }
         
                 &--description {
-                    font-size: 2rem;
-                    line-height: 1.5;
+                    font-size: 3rem;
         
                 }
         
                 &--buttons {
-                    flex-direction: column;
-                    align-items: center;
-
-                    button {
-                        margin: 1rem;
-                        font-size: 2rem;
+                    .btn-about {
+                        button {
+                            font-size: 2.4rem;
+                            margin-bottom: 2rem;
+                        }
                     }
                 }
             }

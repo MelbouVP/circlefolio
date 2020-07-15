@@ -7,7 +7,7 @@
 
     .footer__content-container {
         display: flex;
-        width: 60%;
+        width: 56%;
         justify-content: space-between;
         align-items: center;
         font-size: 2rem;
@@ -28,7 +28,7 @@
 @media (max-width: 750px) {
     .footer {
         .footer__content-container {
-            width: 65%;
+            width: 59%;
         }
     }
 }
@@ -36,7 +36,6 @@
 @media (max-width: 550px) {
     .footer {
         .footer__content-container {
-
             .content__social-media {
                 .social-media__link {
                     height: 4rem;
@@ -51,8 +50,6 @@
 @media (max-width: 460px) {
     .footer {
         .footer__content-container {
-            width: 60%;
-            justify-content: space-between;
 
             .content__social-media {
                 .social-media__link {

@@ -1,8 +1,6 @@
 .header {
     position: relative;
     height: 100vh;
-    min-height: 62rem;
-    max-height: 100rem;
     background-image: $header-bg-prod;
     background-size: cover;
     background-position: bottom;
@@ -43,7 +41,6 @@
 
                     &:hover {
                         cursor: pointer;
-                        // color: rgb(160, 160, 160);
                         color: black;
                     }
                 }
@@ -58,9 +55,7 @@
         margin-top: 3rem;
 
         .heading-title {
-            animation-name: moveInLeft;
-            animation-duration: 1s;
-            animation-timing-function: ease-out;
+            animation: moveInLeft 1s ease-out;
             
             &--pre {
                 display: block;
@@ -88,20 +83,14 @@
 
     .social-media {
         @include socialLinks;
-        animation-name: fadeIn;
-        animation-duration: 1s;
-        animation-delay: 1s;
-        animation-timing-function: ease-out;
-        animation-fill-mode: backwards;
+        animation: fadeIn 1s ease-out 1s backwards;
     }
 
     .doodle-box {
         position: absolute;
         right: 7%;
         top: 15%;
-        animation-name: moveInRight;
-        animation-duration: 1s;
-        animation-timing-function: ease-out;
+        animation: moveInRight 1s ease-out;
 
         img {
             width: 42rem;
@@ -120,16 +109,6 @@
         }
     }
 }
-
-// @media  only screen and (max-width: 1000px) {
-//     .header {
-
-//         .doodle-box {
-//             right: 0%;
-//             top: 15%;
-//         }
-//     }
-// }
 
 @media  only screen and (max-width: 890px) {
     .header {
@@ -164,7 +143,6 @@
     .header {
 
         //! HAMBURGER MENU
-
 
         .header__title-box {
             margin-top: 3rem;
