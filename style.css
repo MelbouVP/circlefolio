@@ -139,7 +139,7 @@ html {
 .header {
   position: relative;
   height: 100vh;
-  min-height: 75rem;
+  min-height: 69rem;
   background-image: url("../circlefolio/assets/Background-hero2.png");
   background-size: cover;
   background-position: bottom; }
@@ -222,6 +222,8 @@ html {
       height: 39rem; } }
 
 @media only screen and (max-width: 780px) {
+  .header .navigation__links {
+    font-size: 3.5rem; }
   .header .header__title-box {
     margin-top: 3rem;
     margin-left: 3rem; }
@@ -229,6 +231,8 @@ html {
       font-size: 7rem; } }
 
 @media only screen and (max-width: 670px) {
+  .header .navigation__links {
+    font-size: 3.5rem; }
   .header .header__title-box {
     margin-top: 3rem;
     margin-left: 3rem; }
@@ -264,6 +268,8 @@ html {
       height: 45rem; } }
 
 @media only screen and (max-width: 460px) {
+  .header .navigation__links {
+    font-size: 3.5rem; }
   .header .header__title-box {
     margin-top: 5rem; }
     .header .header__title-box .heading-title--pre {
@@ -290,6 +296,8 @@ html {
       height: 55rem; } }
 
 @media only screen and (max-width: 380px) {
+  .header .navigation__links {
+    font-size: 3.75rem; }
   .header .header__title-box .heading-title--pre {
     font-size: 3rem; }
   .header .header__title-box .heading-title--main {
