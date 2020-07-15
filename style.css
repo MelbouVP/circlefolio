@@ -140,7 +140,7 @@ html {
   position: relative;
   height: 105vh;
   min-height: 90rem;
-  background-image: url("../../assets/Background-hero2.png");
+  background-image: url("../circlefolio/assets/Background-hero2.png");
   background-size: cover;
   background-position: bottom; }
   .header .navigation {
